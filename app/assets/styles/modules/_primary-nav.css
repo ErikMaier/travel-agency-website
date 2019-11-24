@@ -2,7 +2,9 @@
 
 
     &--pull-right {
-        float: right;
+        @mixin atMedium {
+            float: right;
+        }
     }
 
     ul {
@@ -13,8 +15,12 @@
 
     li {
         list-style: none;
-        float: left;
+        display: inline-block;
         padding-right: 20px;
+        @mixin atMedium {
+            float: left;
+            display: block;
+        }
     }
 
     a {
