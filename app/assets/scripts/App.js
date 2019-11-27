@@ -4,6 +4,17 @@ import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/Sticky-Header';
 
+//React Related Code starts
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+//Import React components
+//import Component from './modules/ReactComponent'
+
+//ReactDOM.render(<Component />, document.querySelector("#react"))
+//React Related Code ends
+
+
 new StickyHeader()
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
